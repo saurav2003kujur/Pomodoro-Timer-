@@ -1,0 +1,97 @@
+:root {
+  --bg: #f8fafc;
+  --work: #fbfbfb;
+  --break: #3b82f6;
+  --start: #10b981;
+  --pause: #facc15;
+  --reset: #ef4444;
+  --text: #efd00a;
+  --digits: #f30000;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #031c06, #021835); /* ✅ Gradient background added */
+  color: var(--text);
+  margin: 0;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+.timer-container {
+  margin-top: 2rem;
+}
+
+.status-ring {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 10px solid var(--work);
+}
+
+.status-ring.break {
+  border-color: var(--break);
+}
+
+.timer-display {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--digits);
+}
+
+.status-label {
+  font-size: 18px;
+  margin-top: 0.5rem;
+}
+
+.controls button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 1rem 0.5rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#startPause {
+  background-color: var(--start);
+  color: white;
+}
+
+#reset {
+  background-color: var(--reset);
+  color: white;
+}
+
+.settings {
+  margin-top: 1.5rem;
+}
+
+.settings label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 14px;
+}

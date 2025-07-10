@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomodoro Timer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@500&family=Poppins:wght@600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="pomo.css"/>
+</head>
+<body>
+  <header>
+    <h1>Pomodoro Timer</h1>
+    <p class="subtitle">Stay productive, one interval at a time.</p>
+  </header>
+
+  <main>
+    <div class="timer-container">
+      <div class="status-ring work" id="statusRing">
+        <div class="timer-display" id="timer">25:00</div>
+        <div class="status-label" id="status">Work</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="startPause">START</button>
+      <button id="reset">RESET</button>
+    </div>
+
+    <div class="settings">
+      <details>
+        <summary>Settings</summary>
+        <label>Work Duration <input type="number" id="workDuration" value="25" min="1"/></label>
+        <label>Break Duration <input type="number" id="breakDuration" value="5" min="1"/></label>
+        <label>Long Break <input type="number" id="longBreakDuration" value="15" min="1"/></label>
+        <button id="saveSettings">Save Settings</button>
+      </details>
+    </div>
+  </main>
+
+  <footer>
+    Built with ❤️ by Saurav Kujur |
+    <a href="https://github.com/your-github" target="_blank">GitHub</a>
+  </footer>
+
+  <script src="pomo.js"></script>
+</body>
+</html>
